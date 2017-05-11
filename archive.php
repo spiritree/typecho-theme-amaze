@@ -6,7 +6,7 @@ $this->need('header.php');
 
 <!-- content srart -->
 <div class="am-g am-g-fixed blog-fixed">
-    <div class="am-u-md-8 am-u-sm-12">
+    <div class="am-u-md-12 am-u-sm-12">
         <h2 class="am-margin-top-lg"><?php $this->archiveTitle(array(
                 'category'  =>  _t('分类 %s 下的文章'),
                 'search'    =>  _t('包含关键字 %s 的文章'),
@@ -17,9 +17,9 @@ $this->need('header.php');
         <?php while($this->next()): ?>
         <article class="am-g blog-entry-article">
             <div class="am-u-lg-6 am-u-lg-12 am-u-sm-12 blog-entry-text">
-                <span> <a href="<?php $this->author->permalink(); ?>">@<?php $this->author(); ?></a> &nbsp;</span>
-                <span><?php $this->date('F j, Y'); ?></span>
-                <span><?php $this->category(','); ?>&nbsp;</span>
+                <span>作者:<a href="<?php $this->author->permalink(); ?>">@<?php $this->author(); ?></a> &nbsp;</span>
+                <span>时间:<?php $this->date('F j, Y'); ?></span>
+                <div class="notepad-index-post-tags"><?php $this->category('  '); ?>&nbsp;</div>
                 <h1><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
                            <div class="post-content" itemprop="articleBody">
     			<?php $this->content('- 阅读剩余部分 -'); ?>
@@ -37,7 +37,6 @@ $this->need('header.php');
             <?php $this->pageLink('Next &raquo;','next');?>
         </ul>
     </div>
-    <?php $this->need('sidebar.php'); ?>
 </div>
 <!-- content end -->
 

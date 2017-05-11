@@ -1,4 +1,14 @@
 <?php
+/**
+ * 这是基于AmazeUI的主题
+ * 
+ * @package Amaze Theme
+ * @author Spiritree
+ * @version 1.0
+ * @link spiritree.me
+ */
+
+
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $this->need('header.php');
 ?>
@@ -11,9 +21,9 @@ $this->need('header.php');
         <?php while($this->next()): ?>
         <article class="am-g blog-entry-article">
             <div class="am-u-lg-6 am-u-lg-12 am-u-sm-12 blog-entry-text">
-                <span> <a href="<?php $this->author->permalink(); ?>">@<?php $this->author(); ?></a> &nbsp;</span>
-                <span><?php $this->date('F j, Y'); ?></span>
-                <span><?php $this->category(','); ?>&nbsp;</span>
+                <span> <a href="<?php $this->author->permalink(); ?>">作者:<?php $this->author(); ?></a> &nbsp;</span>
+                <span>时间:<?php $this->date('F j, Y'); ?></span>
+                <div class="notepad-index-post-tags"><?php $this->category('  '); ?>&nbsp;</div>
                 <h1><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
             <div>
     		<?php $this->content('- 阅读剩余部分 -'); ?>

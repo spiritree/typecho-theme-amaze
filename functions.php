@@ -36,4 +36,3 @@ function img_postthemb($thiz,$default_img){
         return $default_img;
     }
 }
-
