@@ -5,19 +5,17 @@
 </div>
 </footer>
 
-
-
 <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="https://cdn.staticfile.org/jquery/2.1.4/jquery.min.js"></script>
+<script src="<?php $this->options->themeUrl('js/jquery.min.js'); ?>"></script>
 <!--<![endif]-->
 <!--[if lte IE 8 ]>
-<script src="https://cdn.staticfile.org/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://cdn.staticfile.org/modernizr/2.8.3/modernizr.min.js
+<script src="<?php $this->options->themeUrl('js/jquery1.min.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('js/modernizr.min.js'); ?>
 "></script>
-<script src="https://cdn.staticfile.org/amazeui/2.7.2/js/amazeui.ie8polyfill.min.js"></script>
+<script src="<?php $this->options->themeUrl('js/amazeui.ie8polyfill.min.js'); ?>"></script>
 <![endif]-->
-<script src="https://cdn.staticfile.org/amazeui/2.7.2/js/amazeui.min.js"></script>
-<script src="https://cdn.staticfile.org/highlight.js/9.10.0/highlight.min.js"></script>
+<script src="<?php $this->options->themeUrl('js/amazeui.min.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('js/highlight.min.js'); ?>"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <?php $this->footer(); ?>
 </body>
