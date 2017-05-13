@@ -29,7 +29,7 @@ a {
 }
 .blog-nav {
     padding:0 1.3rem;
-    margin-bottom: -4.8rem;
+    margin-bottom: -4.85rem;
 }
 
 .blog-nav li a:hover{
@@ -40,13 +40,9 @@ a {
     height:90%;
     margin-left:1.5rem;
     margin-bottom: 0.5rem;
-    background-color:#e51843;
 }
 .am-dropdown-content li a{
     background-color:transparent;
-}
-.am-dropdown-content li a:hover {
-    background-color:#e51843;
 }
 .blog-text-center {
     text-align:center;
@@ -330,7 +326,7 @@ h1 span{
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    padding: 80px 0px 120px 0px;
   }
 }
 .intro-header .site-heading,
@@ -484,5 +480,5 @@ input::-webkit-input-placeholder {
 
 .am-collapse {
   display: none;
-  padding-bottom: 4.8rem;
+  padding-bottom: 4.85rem;
 }
