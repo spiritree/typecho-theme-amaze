@@ -3,13 +3,14 @@
 
     <!-- content srart -->
     <div class="am-g am-g-fixed blog-fixed blog-content">
-        <div class="am-u-md-12 am-u-sm-12">
+        <div class="am-u-lg-12 am-u-sm-12">
             <article class="am-article blog-article-p">
                 <div class="am-article-hd">
                     <h1 class="am-article-title blog-text-center"><?php $this->title() ?></h1>
                     <p class="am-article-meta blog-text-center">
-                        <span><?php $this->category(','); ?> &nbsp;</span>-
-                        <span><a href="<?php $this->author->permalink(); ?>">@<?php $this->author(); ?> &nbsp;</a></span>-
+                <span class="notepad-index-post-tags"><?php $this->category('  '); ?>&nbsp;
+</span>                        
+<span><a href="<?php $this->author->permalink(); ?>">@<?php $this->author(); ?> &nbsp;</a></span>-
                         <span><?php $this->date('F j, Y'); ?></span>
                     </p>
                 </div>
@@ -25,6 +26,9 @@
                     <?php if ($this->options->socialQQ): ?>
                         <a href="tencent://message/?uin=<?php $this->options->socialQQ(); ?>&Site=junichi&Menu=yes"><span class="am-icon-qq am-icon-fw am-primary blog-icon"></span></a>
                     <?php endif; ?>
+                    <?php if ($this->options->socialWechat): ?>
+                        <a href="<?php $this->options->socialWechat(); ?>"><span class="am-icon-wechat am-icon-fw blog-icon"></span></a>
+                    <?php endif; ?>
                     <?php if ($this->options->socialGithub): ?>
                         <a href="<?php $this->options->socialGithub(); ?>"><span class="am-icon-github am-icon-fw blog-icon"></span></a>
                     <?php endif; ?>
@@ -34,7 +38,6 @@
                     <?php if ($this->options->socialTwitter): ?>
                         <a href="<?php $this->options->socialTwitter(); ?>"><span class="am-icon-twitter am-icon-fw blog-icon"></span></a>
                     <?php endif; ?>
-                    <a href="<?php $this->options->feedUrl(); ?>"><span class="am-icon-rss am-icon-fw blog-icon"></span></a>
                 </div>
             </div>
 

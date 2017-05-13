@@ -5,6 +5,9 @@
 </div>
 </footer>
 
+
+
+<!-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="<?php $this->options->themeUrl('js/jquery.min.js'); ?>"></script>
 <!--<![endif]-->
@@ -20,3 +23,4 @@
 <?php $this->footer(); ?>
 </body>
 </html>
+<!-->

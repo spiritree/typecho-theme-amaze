@@ -14,29 +14,25 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
       <!-- AmazeUI -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/amazeui/2.7.2/css/amazeui.min.css">
-    <!-- <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- CodeHighlight -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.10.0/styles/atom-one-light.min.css">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/amazeui.min.css'); ?>">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="https://om4v1ul08.qnssl.com/typecho/css/custom1.css">
-    <link rel="stylesheet" href="https://om4v1ul08.qnssl.com/typecho/css/nav.css">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/customui.min.css'); ?>">
+    <!-- CodeHighlight -->
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/atom-one-light.min.css'); ?>">
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
 </head>
-
 
 <body id="blog">
 
 <nav class="am-g am-g-fixed blog-fixed blog-nav">
     <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only blog-button" data-am-collapse="{target: '#blog-collapse'}" ><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
-
     <div class="am-collapse am-topbar-collapse" id="blog-collapse">
         <ul class="am-nav am-nav-pills am-topbar-nav">
-            <li <?php if($this->is('index')): ?>class="am-active"<?php endif; ?>><a href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a></li>
+            <li class="am-active"><a href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a></li>
             <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
             <?php while($pages->next()): ?>
-                <li <?php if($this->is('page', $pages->slug)): ?>class="am-active"<?php endif; ?>><a href="<?php $pages->permalink(); ?>"><?php $pages->title(); ?></a></li>
+                <li class="am-active"><a href="<?php $pages->permalink(); ?>"><?php $pages->title(); ?></a></li>
             <?php endwhile; ?>
         </ul>
 <div class="am-topbar-form am-topbar-right am-form-inline am-fr">
@@ -46,7 +42,6 @@
                         </form>
 </div>
 </div>
-        </form>
     </div>
 </nav>
 

@@ -6,6 +6,9 @@
             <?php if ($this->options->socialQQ): ?>
             <a href="tencent://message/?uin=<?php $this->options->socialQQ(); ?>&Site=junichi&Menu=yes"><span class="am-icon-qq am-icon-fw am-primary blog-icon"></span></a>
             <?php endif; ?>
+            <?php if ($this->options->socialWechat): ?>
+            <a href="<?php $this->options->socialWechat(); ?>"><span class="am-icon-wechat am-icon-fw blog-icon"></span></a>
+            <?php endif; ?>
             <?php if ($this->options->socialGithub): ?>
             <a href="<?php $this->options->socialGithub(); ?>"><span class="am-icon-github am-icon-fw blog-icon"></span></a>
             <?php endif; ?>
@@ -15,8 +18,6 @@
             <?php if ($this->options->socialTwitter): ?>
             <a href="<?php $this->options->socialTwitter(); ?>"><span class="am-icon-twitter am-icon-fw blog-icon"></span></a>
             <?php endif; ?>
-
-            <!-- <a href="<?php $this->options->feedUrl(); ?>"><span class="am-icon-rss am-icon-fw blog-icon"></span></a> -->
 
         </p>
     </div>
