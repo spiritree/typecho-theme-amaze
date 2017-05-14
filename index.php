@@ -1,6 +1,6 @@
 <?php
 /**
- * 这是基于AmazeUI的主题
+ * 这是基于AmazeUI&Project-Pages的主题
  * 
  * @package Amaze Theme
  * @author Spiritree
@@ -24,7 +24,7 @@ $this->need('header.php');
                 <span> <a href="<?php $this->author->permalink(); ?>">作者:<?php $this->author(); ?></a> &nbsp;</span>
                 <span>时间:<?php $this->date('F j, Y'); ?></span>
                 <div class="notepad-index-post-tags"><?php $this->category('  '); ?>&nbsp;</div>
-                <h1><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
+                <h1><a target="_blank" itemtype="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
             <div>
     		<?php $this->content('- 阅读剩余部分 -'); ?>
             </div>
