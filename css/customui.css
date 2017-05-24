@@ -78,7 +78,6 @@ a:hover {
 @media only screen and (max-width:640px) {
     .blog-entry-article {
         padding-bottom:1rem;
-        text-align:center
     }
 }
 .blog-entry-text {
