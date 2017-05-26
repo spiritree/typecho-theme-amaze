@@ -4,19 +4,19 @@
         <h2 class="blog-text-center blog-title"><span><?php _e('联系我'); ?></span></h2>
         <p>
             <?php if ($this->options->socialQQ): ?>
-            <a href="tencent://message/?uin=<?php $this->options->socialQQ(); ?>&Site=junichi&Menu=yes"><span class="am-icon-qq am-icon-fw am-primary blog-icon"></span></a>
+            <a target="_blank" itemtype="url" href="tencent://message/?uin=<?php $this->options->socialQQ(); ?>&Site=junichi&Menu=yes"><span class="am-icon-qq am-icon-fw am-primary blog-icon"></span></a>
             <?php endif; ?>
             <?php if ($this->options->socialWechat): ?>
-            <a href="<?php $this->options->socialWechat(); ?>"><span class="am-icon-wechat am-icon-fw blog-icon"></span></a>
+            <a target="_blank" itemtype="url" href="<?php $this->options->socialWechat(); ?>"><span class="am-icon-wechat am-icon-fw blog-icon"></span></a>
             <?php endif; ?>
             <?php if ($this->options->socialGithub): ?>
-            <a href="<?php $this->options->socialGithub(); ?>"><span class="am-icon-github am-icon-fw blog-icon"></span></a>
+            <a target="_blank" itemtype="url" href="<?php $this->options->socialGithub(); ?>"><span class="am-icon-github am-icon-fw blog-icon"></span></a>
             <?php endif; ?>
             <?php if ($this->options->socialWeibo): ?>
-            <a href="<?php $this->options->socialWeibo(); ?>"><span class="am-icon-weibo am-icon-fw blog-icon"></span></a>
+            <a target="_blank" itemtype="url" href="<?php $this->options->socialWeibo(); ?>"><span class="am-icon-weibo am-icon-fw blog-icon"></span></a>
             <?php endif; ?>
             <?php if ($this->options->socialTwitter): ?>
-            <a href="<?php $this->options->socialTwitter(); ?>"><span class="am-icon-twitter am-icon-fw blog-icon"></span></a>
+            <a target="_blank" itemtype="url" href="<?php $this->options->socialTwitter(); ?>"><span class="am-icon-twitter am-icon-fw blog-icon"></span></a>
             <?php endif; ?>
 
         </p>
