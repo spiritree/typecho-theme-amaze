@@ -14,11 +14,11 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
       <!-- AmazeUI -->
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/amazeui.min.css'); ?>">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/amazeui/2.7.2/css/amazeui.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/customui.min.css'); ?>">
     <!-- CodeHighlight -->
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/atom-one-light.min.css'); ?>">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.10.0/styles/atom-one-light.min.css">
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
 </head>
