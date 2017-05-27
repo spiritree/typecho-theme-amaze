@@ -56,4 +56,14 @@
                 ->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
         </ul>
     </div>
+
+    <div class="blog-sidebar-widget blog-bor">
+        <h2 class="blog-title"><span><?php _e('最近回复'); ?></span></h2>
+        <ul class="am-list">
+        <?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
+        <?php while($comments->next()): ?>
+            <li><a class="am-comment-author" href="<?php $comments->permalink(); ?>"><?php $comments->author(false); ?></a><li class="am-comment"><?php $comments->excerpt(35, '...'); ?></li></li>
+        <?php endwhile; ?>
+        </ul>
+    </div>
 </div>
