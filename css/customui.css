@@ -374,7 +374,7 @@ div.notepad-index-post-tags {
     padding:.3125rem .9375rem;
     margin-right:.1875rem;
     color:black;
-    border:.0625rem solid black;
+    border:1px solid #000000;
     border-radius:.125rem;
     margin-bottom:.3125rem
 }
