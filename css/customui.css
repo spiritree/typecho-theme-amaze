@@ -380,7 +380,7 @@ div.notepad-index-post-tags {
 }
 .notepad-index-post-tags a:hover {
     color:#e51843;
-    border:.0625rem solid #e51843
+    border:1px solid #e51843
 }
 input {
     outline:none
