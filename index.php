@@ -26,7 +26,8 @@ $this->need('header.php');
                 <div class="notepad-index-post-tags"><?php $this->category('  '); ?>&nbsp;</div>
                 <h1><a target="_blank" itemtype="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
             <div>
-    		<?php $this->content('- 阅读剩余部分 -'); ?>
+    		<?php $this->content(''); ?>
+            <a href="<?php $this->permalink() ?>" class="blog-continue" target="_blank">继续阅读 »</a>
             </div>
               
             </div>

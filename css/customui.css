@@ -122,12 +122,11 @@ h1 span {
 }
 .blog-continue {
     color:#000;
-    border:.2rem solid gray;
+    border:1px solid black;
     padding:.5rem 1rem;
-    font-weight:bold
 }
 .blog-continue:hover {
-    background-color:#10D07A;
+    background-color:#e51843;
     color:#fff;
     border:.1rem #fff
 }
