@@ -75,11 +75,6 @@ a:hover {
     padding-bottom:3rem;
     border-bottom:1px solid #e5e5e5
 }
-@media only screen and (max-width:640px) {
-    .blog-entry-article {
-        padding-bottom:1rem;
-    }
-}
 .blog-entry-text {
     padding:0 1rem
 }
