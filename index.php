@@ -4,7 +4,7 @@
  * 
  * @package Amaze Theme
  * @author Spiritree
- * @version 1.0
+ * @version 1.0.0
  * @link spiritree.me
  */
 
