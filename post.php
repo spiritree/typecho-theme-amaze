@@ -24,34 +24,13 @@
     <?php $this->header(); ?>
 </head>
 
-    <!-- <nav class="am-g am-g-fixed blog-fixed blog-nav">
-    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only blog-button" data-am-collapse="{target: '#blog-collapse'}" ><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
-    <div class="am-collapse am-topbar-collapse" id="blog-collapse">
-        <ul class="am-nav am-nav-pills am-topbar-nav">
-            <li class="am-active"><a href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a></li>
-            <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
-            <?php while($pages->next()): ?>
-                <li class="am-active"><a href="<?php $pages->permalink(); ?>"><?php $pages->title(); ?></a></li>
-            <?php endwhile; ?>
-        </ul>
-<div class="am-topbar-form am-topbar-right am-form-inline am-fr">
-<div class="am-form-group">
-                        <form id="search-extend" action="./" role="search">
-	                    <input type="search" name="s" placeholder="输入关键字搜索">
-                        </form>
-</div>
-</div>
-    </div>
-</nav> -->
-
 <body id="blog">
-    <!-- Navigation -->
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
+                <span class="sr-only"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -66,10 +45,12 @@
                     <li>
                         <a href="<?php $this->options->siteUrl(); ?>"><?php _e('Home'); ?></a>
                     </li>
-                    
+                    <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
+                    <?php while($pages->next()): ?>
                     <li>
-                        <a href="<?php $pages->permalink(); ?>"><?php $pages->title(); ?></a>  
-                    </li>              
+                        <a href="<?php $pages->permalink(); ?>"><?php $pages->title(); ?></a>
+                    </li>
+                    <?php endwhile; ?>          
                 </ul>
             </div>
         </div>
@@ -77,18 +58,18 @@
     </div>
     <!-- /.container -->
 </nav>
-<header class="intro-header" style="background-image: url('<?php $this->options->backgroundImage();?>')">
-<div class="container">
-    <div class="row">
+<header class="intro-header" style="background-image: url('<?php $this->options->backgroundImage(); ?>')">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1><?php $this->title() ?></h1>
-                    <span class="meta">@<?php $this->author(); ?> &nbsp;<?php $this->date('F j, Y'); ?></span>
-                    <div class="tags"><?php $this->category('  '); ?>&nbsp;</div>
+                <div class="site-heading">
+                    <h1>Spiritree Blog</h1>
+                    <!-- <hr class="small"> -->
+                    <span class="subheading">分享学习之中的笔记</span>
                 </div>
             </div>
+        </div>
     </div>
-</div>
 </header>
 
     <!-- content start -->
