@@ -1,3 +1,6 @@
+[![GitHub issues](https://img.shields.io/github/issues/SpiriTree/Typecho-theme-amaze.svg?style=flat-square)](https://github.com/SpiriTree/Typecho-theme-amaze/issues)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/SpiriTree/Typecho-theme-amaze/master/LICENSE)
+
 ## 基于 AmazeUI&Project-Pages 的 Typecho 主题
 > 这是一个简介风格的主题，参考了AmazeUI和[Typecho-Theme-Meizi](https://github.com/tlerbao/Typecho-Theme-Meizi)还有Jekll的主题Project-pages，可以说是AmazuUI、Project-pages、Typecho三个主题混搭风格。
 
@@ -6,13 +9,13 @@
 ## 概述
 
 - 作者：spiritree
-- 版本：1.0.0
+- 版本：1.0.0
 
 ## 主题预览
 ![typecho.png](https://i.loli.net/2017/07/29/597bf17f1bb63.png)
 
 
-**[spiritree.me](https://spiritree.me)**
+预览地址：**[spiritree.me](https://spiritree.me)**
 
 ## 主题特点
 - 基于AmazeUI框架（真心符合我的审美）
