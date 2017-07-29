@@ -13,19 +13,20 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
-      <!-- AmazeUI -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/amazeui/2.7.2/css/amazeui.min.css">
+    <!-- AmazeUI -->
+    <link href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css" rel="stylesheet">
+    <!-- BootstrapUI -->
+    <!-- <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/customui.min.css'); ?>">
     <!-- CodeHighlight -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.10.0/styles/atom-one-light.min.css">
+    <link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/atom-one-light.min.css" rel="stylesheet">
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
 </head>
 
 <body id="blog">
-
-<nav class="am-g am-g-fixed blog-fixed blog-nav">
+    <!-- <nav class="am-g am-g-fixed blog-fixed blog-nav">
     <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only blog-button" data-am-collapse="{target: '#blog-collapse'}" ><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
     <div class="am-collapse am-topbar-collapse" id="blog-collapse">
         <ul class="am-nav am-nav-pills am-topbar-nav">
@@ -43,16 +44,49 @@
 </div>
 </div>
     </div>
-</nav>
+</nav> -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Spiritree Blog</a>
+        </div>
 
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="<?php $this->options->siteUrl(); ?>"><?php _e('Home'); ?></a>
+                    </li>
+                    
+                    <li>
+                         <a href="<?php $pages->permalink(); ?>"><?php $pages->title(); ?></a> 
+                    </li>              
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
 <header class="intro-header" style="background-image: url('<?php $this->options->backgroundImage(); ?>')">
-    <div class="am-g">
-            <div class="am-u-lg-8 am-u-lg-offset-2 am-u-md-10 am-u-md-offset-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
-                    <h1>精神之树的博客</h1>
+                    <h1>Spiritree Blog</h1>
                     <!-- <hr class="small"> -->
-                    <span class="subheading">Welcome to my blog</span>
+                    <span class="subheading">分享学习之中的笔记</span>
                 </div>
             </div>
+        </div>
     </div>
 </header>

@@ -3,6 +3,7 @@
 
 ### 主题预览
 ![screenshot.png](https://ooo.0o0.ooo/2017/05/14/59184f5167d85.png)
+[spiritree.me](https://spiritree.me)
 
 ### 主题特点
 - 基于AmazeUI框架（真心符合我的审美）
@@ -13,5 +14,5 @@
 ### 安装
 将主题文件夹改名为Amaze，放到Typecho的\usr\themes\目录下，并后台开启主题。
 
-### 作者博客
-[spiritree.me](https://spiritree.me)
+### Todo List
+- 美化navbar在移动端的表现效果
