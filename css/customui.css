@@ -2557,3 +2557,6 @@ header.intro-header .header-mask {
 code {
   white-space: inherit;
 }
+textarea {
+  width: 100%;
+}
