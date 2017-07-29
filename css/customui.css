@@ -2554,3 +2554,6 @@ header.intro-header .header-mask {
     margin-right: 15px;
     margin-left: 15px;
 }
+code {
+  white-space: inherit;
+}
