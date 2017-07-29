@@ -2,8 +2,10 @@
 > 这是一个简介风格的主题，参考了AmazeUI和[Typecho-Theme-Meizi](https://github.com/tlerbao/Typecho-Theme-Meizi)还有Jekll的主题Project-pages，可以说是AmazuUI、Project-pages、Typecho三个主题混搭风格。
 
 ### 主题预览
-![screenshot.png](https://ooo.0o0.ooo/2017/05/14/59184f5167d85.png)
-[spiritree.me](https://spiritree.me)
+![typecho.png](https://i.loli.net/2017/07/29/597bf17f1bb63.png)
+
+
+**[spiritree.me](https://spiritree.me)**
 
 ### 主题特点
 - 基于AmazeUI框架（真心符合我的审美）
@@ -15,4 +17,4 @@
 将主题文件夹改名为Amaze，放到Typecho的\usr\themes\目录下，并后台开启主题。
 
 ### Todo List
-- 美化navbar在移动端的表现效果
+- [✓] 美化navbar在移动端的表现效果
