@@ -17,7 +17,7 @@ $this->need('header.php');
 
 <!-- content start -->
 <div class="am-g am-g-fixed blog-fixed">
-    <div class="am-u-md-8 am-u-sm-12">
+    <div class="am-u-lg-8 am-u-sm-12">
         <?php while($this->next()): ?>
         <article class="am-g blog-entry-article">
             <div class="am-u-lg-6 am-u-lg-12 am-u-sm-12 blog-entry-text">

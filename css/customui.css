@@ -1,5 +1,5 @@
 a {
-    color:#38495c
+    color:#404040
 }
 a:hover {
     color:#64b587
@@ -2559,4 +2559,12 @@ code {
 }
 textarea {
   width: 100%;
+}
+.am-u-sm-10 {
+  display: none;
+}
+@media only screen and (min-width: 1025px) {
+  .am-u-lg-4 {
+    display: block;
+  }
 }
