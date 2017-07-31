@@ -2,6 +2,9 @@
 
 <footer class="blog-footer">
 <div class="blog-text-center">© <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a> 由 <a href="http://www.typecho.org" target="_blank">Typecho</a> 强力驱动 Theme is <a href="https://spiritree.me" target="_blank">Amaze made by Spiritree</a>
+<a href="https://github.com/SpiriTree/typecho-theme-amaze" target="_black">
+    <img src="https://img.shields.io/github/stars/SpiriTree/typecho-theme-amaze.svg?style=flat-square">
+</a>
 </div>
 </footer>
 
