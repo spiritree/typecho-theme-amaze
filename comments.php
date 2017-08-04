@@ -32,11 +32,7 @@
     			</span>
     			<span class="am-u-lg-4">
     				<label for="url"<?php if ($this->options->commentsRequireURL): ?> class="required"<?php endif; ?>><?php _e('网站'); ?></label>
-<<<<<<< HEAD
     				<input type="url" name="url" id="url" class="text" value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?> />
-=======
-    				<input type="url" name="url" id="url" class="text" placeholder="<?php _e('http://'); ?>" value="<?php $this->remember('url'); ?>"<?php if ($this->options->commentsRequireURL): ?> required<?php endif; ?> />
->>>>>>> ad812e921051aaa86a07b3f9d40fb08e8afb2208
     			</span>
     		</div>
             <?php endif; ?>
