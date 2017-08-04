@@ -382,6 +382,7 @@ input {
     border: 1px solid #bdc3c7;
     border-radius: 2px;
     box-shadow: none;
+    width: 100%;
 }
 input[type=search] {
     -webkit-appearance:textfield;
