@@ -1,7 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <div class="am-u-lg-4 am-u-sm-10 blog-sidebar">
     <div class="blog-sidebar-widget blog-bor">
-        <h2 class="blog-text-center blog-title"><span><?php _e('联系我'); ?></span></h2>
+        <h2 class="blog-title"><span><?php _e('联系我'); ?></span></h2>
         <p>
             <?php if ($this->options->socialQQ): ?>
             <a target="_blank" itemtype="url" href="tencent://message/?uin=<?php $this->options->socialQQ(); ?>&Site=junichi&Menu=yes"><span class="am-icon-qq am-icon-fw am-primary blog-icon"></span></a>

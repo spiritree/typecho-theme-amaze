@@ -12,10 +12,8 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <!-- AmazeUI -->
-    <link href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css" rel="stylesheet">
-    <!-- BootstrapUI -->
-    <!-- <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- AmazeUI 3.0 -->
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/amazeui.min.css'); ?>">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/customui.min.css'); ?>">
     <!-- CodeHighlight -->
@@ -105,17 +103,6 @@
                 </div>
             </div>
 
-            <hr>
-            <div class="am-g blog-author blog-article-margin">
-                <div class="am-u-sm-3 am-u-md-3 am-u-lg-2">
-                    <img src="https://om4v1ul08.qnssl.com/avatar.jpg" alt="" class="blog-author-img am-circle">
-                </div>
-                <div class="am-u-sm-9 am-u-md-9 am-u-lg-10">
-                    <h3><span><?php _e('作者'); ?> &nbsp;: &nbsp;</span><span class="blog-color"><?php $this->author(); ?></span></h3>
-                    <p><?php $this->options->authorInfo(); ?></p>
-                </div>
-            </div>
-            <hr>
             <ul class="am-pagination blog-article-margin">
                 <li class="am-pagination-prev"><?php $this->thePrev('%s',''); ?></li>
                 <li class="am-pagination-next"><?php $this->theNext('%s',''); ?></li>

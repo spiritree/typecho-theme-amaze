@@ -7,14 +7,6 @@
 </a>
 </div>
 </footer>
-
-<!--[if (gte IE 9)|!(IE)]><!-->
-<script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
-<!--<![endif]-->
-<!--[if lte IE 8 ]>
-<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/modernizr/2.8.3/modernizr.min.js"></script>
-<![endif]-->
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script>

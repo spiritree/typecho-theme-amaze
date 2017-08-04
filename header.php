@@ -13,10 +13,8 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <!-- AmazeUI -->
-    <link href="https://cdn.bootcss.com/amazeui/2.7.2/css/amazeui.min.css" rel="stylesheet">
-    <!-- BootstrapUI -->
-    <!-- <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- AmazeUI 3.0 -->
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/amazeui.min.css'); ?>">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/customui.min.css'); ?>">
     <!-- CodeHighlight -->
