@@ -2,7 +2,7 @@ a {
     color:#404040
 }
 a:hover {
-    color:#64b587
+    color:#42b983
 }
 .blog-header {
     margin-top:3rem
@@ -25,7 +25,7 @@ a:hover {
     color:#333;
 }
 #blog-collapse li a:hover {
-    color:#64b587
+    color:#42b983
 }
 .blog-nav {
     padding:0 1.3rem;
@@ -33,7 +33,7 @@ a:hover {
 }
 .blog-nav li a:hover {
     background-color:#fff;
-    color:#64b587
+    color:#42b983
 }
 .blog-button {
     height:90%;
@@ -110,11 +110,11 @@ h1 span {
 }
 .blog-icon:hover {
     color:#fff;
-    background:#64b587;
-    border:1px solid #64b587
+    background:#42b983;
+    border:1px solid #42b983
 }
 .blog-color {
-    color:#64b587
+    color:#42b983
 }
 .blog-continue {
     color:#000;
@@ -122,7 +122,7 @@ h1 span {
     padding:.5rem 1rem;
 }
 .blog-continue:hover {
-    background-color:#64b587;
+    background-color:#42b983;
     color:#fff;
     border:.1rem #fff
 }
@@ -134,7 +134,7 @@ h1 span {
     padding:.2rem .8rem .2rem .8rem
 }
 .blog-tag:hover {
-    background:#64b587;
+    background:#42b983;
     color:#fff
 }
 .blog-clear-margin {
@@ -244,7 +244,7 @@ h1 span {
     list-style:none
 }
 .timeline-span {
-    border-left:2px solid #64b587
+    border-left:2px solid #42b983
 }
 @media only screen and (max-width: 767px) {
     .navbar-default .navbar-collapse {
@@ -374,11 +374,14 @@ div.notepad-index-post-tags {
     margin-bottom:.3125rem
 }
 .notepad-index-post-tags a:hover {
-    color:#64b587;
-    border:1px solid #64b587
+    color:#42b983;
+    border:1px solid #42b983
 }
 input {
-    outline:none
+    outline:none;
+    border: 1px solid #bdc3c7;
+    border-radius: 2px;
+    box-shadow: none;
 }
 input[type=search] {
     -webkit-appearance:textfield;
@@ -496,6 +499,7 @@ input::-webkit-input-placeholder {
 #comment-form label {
     display:block;
     margin-bottom:.5em;
+    margin-top:.5em;
     font-weight:bold
 }
 #comment-form .required:after {
@@ -2559,6 +2563,8 @@ code {
 }
 textarea {
   width: 100%;
+  border-radius: 2px;
+  border: 1px solid #bdc3c7
 }
 .am-u-sm-10 {
   display: none;
