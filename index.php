@@ -1,10 +1,10 @@
 <?php
 /**
- * 这是基于AmazeUI&Project-Pages的主题
+ * 这是基于AmazeUI&Jeklly theme的主题
  * 
  * @package Amaze Theme
  * @author Spiritree
- * @version 1.0.0
+ * @version 1.1.0
  * @link spiritree.me
  */
 
