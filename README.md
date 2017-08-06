@@ -10,7 +10,7 @@
 - 版本：1.1.0
 
 ## 主题预览
-![typecho.png](https://i.loli.net/2017/07/29/597bf17f1bb63.png)
+![typecho-theme-amaze.png](https://ooo.0o0.ooo/2017/08/06/59868a3fcf4e6.png)
 
 预览地址：**[spiritree.me](https://spiritree.me)**
 
