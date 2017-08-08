@@ -117,6 +117,9 @@ h1 span {
 .blog-color {
     color:#42b983
 }
+.blog-content {
+  font-size: 120%;
+}
 .blog-continue {
     color:#000;
     border:1px solid black;
