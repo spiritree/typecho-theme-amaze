@@ -2599,3 +2599,6 @@ pre code {
 img {
   max-width: 100%;
 }
+.am-list>li>a {
+  word-wrap: break-word;
+}
