@@ -2612,3 +2612,6 @@ img {
     font-size: inherit;
   }
 }
+code {
+  font-size: 90%;
+}
