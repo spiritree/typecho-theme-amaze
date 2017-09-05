@@ -49,9 +49,6 @@
                         <a href="<?php $pages->permalink(); ?>"><?php $pages->title(); ?></a>
                     </li>
                     <?php endwhile; ?>
-                    <li>
-                        <a href="https://spiritree.github.io/note/" target="_blank"><?php _e('Note'); ?></a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -78,7 +75,7 @@
     <div class="container">
     <div class="am-g am-g-fixed blog-fixed blog-content">
         <div class="am-u-lg-12 am-u-sm-12">
-            <article class="am-article blog-article-p">
+            <article class="am-article blog-article-p article-trigger">
                 <div class="am-article-bd">
                     <?php $this->content(); ?>
                 </div>

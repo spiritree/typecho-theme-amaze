@@ -2620,3 +2620,12 @@ img {
 code {
   font-size: 90%;
 }
+.article-trigger h2::before,
+.article-trigger h3::before,
+.article-trigger h4::before {
+  font-weight: 600;
+  position: absolute;
+  content: '#';
+  left: -5px;
+  color: #337ab7;
+}

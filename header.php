@@ -49,7 +49,7 @@
                     <li>
                         <a href="<?php $pages->permalink(); ?>"><?php $pages->title(); ?></a>
                     </li>
-                    <?php endwhile; ?>          
+                    <?php endwhile; ?>
                 </ul>
             </div>
         </div>
