@@ -48,7 +48,10 @@
                     <li>
                         <a href="<?php $pages->permalink(); ?>"><?php $pages->title(); ?></a>
                     </li>
-                    <?php endwhile; ?>          
+                    <?php endwhile; ?>
+                    <li>
+                        <a href="https://spiritree.github.io/note/" target="_blank"><?php _e('Note'); ?></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -80,32 +83,10 @@
                     <?php $this->content(); ?>
                 </div>
             </article>
-
-            <div class="am-g blog-article-widget blog-article-margin">
-                <div class="am-u-lg-6 am-u-md-7 am-u-sm-9 am-u-sm-centered blog-text-center">
-                    <span class="am-icon-tags"> &nbsp;</span><?php _e('标签：'); ?> <?php $this->tags(', ', true, 'none'); ?>
-                    <hr>
-                    <?php if ($this->options->socialQQ): ?>
-                        <a href="tencent://message/?uin=<?php $this->options->socialQQ(); ?>&Site=junichi&Menu=yes"><span class="am-icon-qq am-icon-fw am-primary blog-icon"></span></a>
-                    <?php endif; ?>
-                    <?php if ($this->options->socialWechat): ?>
-                        <a href="<?php $this->options->socialWechat(); ?>"><span class="am-icon-wechat am-icon-fw blog-icon"></span></a>
-                    <?php endif; ?>
-                    <?php if ($this->options->socialGithub): ?>
-                        <a href="<?php $this->options->socialGithub(); ?>"><span class="am-icon-github am-icon-fw blog-icon"></span></a>
-                    <?php endif; ?>
-                    <?php if ($this->options->socialWeibo): ?>
-                        <a href="<?php $this->options->socialWeibo(); ?>"><span class="am-icon-weibo am-icon-fw blog-icon"></span></a>
-                    <?php endif; ?>
-                    <?php if ($this->options->socialTwitter): ?>
-                        <a href="<?php $this->options->socialTwitter(); ?>"><span class="am-icon-twitter am-icon-fw blog-icon"></span></a>
-                    <?php endif; ?>
-                </div>
-            </div>
-
-            <ul class="am-pagination blog-article-margin">
-                <li class="am-pagination-prev"><?php $this->thePrev('%s',''); ?></li>
-                <li class="am-pagination-next"><?php $this->theNext('%s',''); ?></li>
+            <hr>
+            <ul class="pager">
+                <li class="previous"><?php $this->thePrev('%s',''); ?></li>
+                <li class="next"><?php $this->theNext('%s',''); ?></li>
             </ul>
 
             <?php $this->need('comments.php'); ?>

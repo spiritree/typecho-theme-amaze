@@ -1719,16 +1719,16 @@ button.paper-button {
   line-height: 2;
   margin-top: 20px;
 }
-.post-container .pager li {
-  width: 48%;
+.pager li {
+  width: 40%;
 }
-.post-container .pager li.next {
+.pager li.next {
   float: right;
 }
-.post-container .pager li.previous {
+.pager li.previous {
   float: left;
 }
-.post-container .pager li > a {
+.pager li > a {
   width: 100%;
 }
 .post-container .pager li > a > span {
@@ -2208,6 +2208,9 @@ form .row:first-child .floating-label-form-group {
 .pager {
   margin: 20px 0 0 !important;
   padding: 0px !important;
+  text-align: center;
+  list-style: none;
+  height: 86px;
 }
 .pager li > a,
 .pager li > span {
@@ -2224,6 +2227,8 @@ form .row:first-child .floating-label-form-group {
   padding: 10px;
   background-color: white;
   border-radius: 0;
+  display: inline-block;
+  border: 1px solid;
 }
 @media only screen and (min-width: 768px) {
   .pager li > a,
