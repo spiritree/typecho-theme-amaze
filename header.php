@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Spiritree Blog</a>
+            <a class="navbar-brand" href="/"><?php $this->options->title(); ?></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -62,9 +62,9 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
-                    <h1>Spiritree Blog</h1>
+                    <h1><?php $this->options->title(); ?></h1>
                     <!-- <hr class="small"> -->
-                    <span class="subheading">分享学习之中的笔记</span>
+                    <span class="subheading"><?php $this->options->description() ?></span>
                 </div>
             </div>
         </div>
