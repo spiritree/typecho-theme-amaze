@@ -3,7 +3,7 @@
 <footer class="blog-footer">
     <ul class="list-inline text-center">
 	    <li>
-            <a href="https://github.com/SpiriTree/typecho-theme-amaze" target="_blank">
+            <a href="https://github.com/spiritree/typecho-theme-amaze" target="_blank">
             <span class="am-icon-btn am-icon-md am-icon-github"></span>
         </li>
     </ul>
