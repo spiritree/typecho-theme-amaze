@@ -1369,27 +1369,47 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     padding-right: 5%;
   }
 }
+.sidebar-container .sidebar-header {
+  position: relative;
+  padding-bottom: 13px;
+  padding-top: 40px;
+  margin-left: 0px;
+}
+.sidebar-header {
+  margin: 0 30px 0 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0,0,0,0.0785);
+}
+.sidebar-header .sidebar-header-title {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: rgba(0,0,0,0.8);
+  height: 22px;
+  vertical-align: top;
+}
 .sidebar-container {
   color: #bfbfbf;
   font-size: 14px;
+  padding-left: 5%;
 }
-.sidebar-container h5 {
-  color: #cccccc;
+.sidebar-container h2 {
+  color: #000004;
   padding-bottom: 1em;
 }
-.sidebar-container h5 a {
+.sidebar-container h2 a {
   color: #cccccc !important;
   text-decoration: none;
 }
 .sidebar-container a {
-  color: #bfbfbf !important;
+  color: rgba(0, 0, 0, 0.6) !important;
 }
 .sidebar-container a:hover,
 .sidebar-container a:active {
   color: #0085a1 !important;
 }
 .sidebar-container .tags a {
-  border-color: #bfbfbf;
+  border-color: #f5f5f5;
 }
 .sidebar-container .tags a:hover,
 .sidebar-container .tags a:active {
@@ -1488,6 +1508,31 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   .side-catalog {
     display: none;
   }
+}
+.sidebar-list ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar-list-body li.sidebar-list-item:first-child {
+  margin-top: 15px;
+}
+.sidebar-list-body li.sidebar-list-item {
+  margin-top: 25px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+.sidebar-list .sidebar-list-item {
+  margin: 20px 0px 20px 20px;
+}
+.sidebar-header .sidebar-header-title:after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 70px;
+  background: #2f2f2d;
+  content: '';
 }
 /*
   Please note this CSS is currently in   prototype form. We'll implement a cleaned up version in Web Starter Kit.
@@ -2283,12 +2328,12 @@ img::-moz-selection {
 .tags a,
 .tags .tag {
   display: inline-block;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  border-radius: 999em;
-  padding: 0 10px;
+  border: 1px solid #f5f5f5;
+  border-radius: 2px;
+  padding: 5px 10px;
   color: #ffffff;
-  line-height: 24px;
-  font-size: 12px;
+  line-height: 22px;
+  font-size: 14px;
   text-decoration: none;
   margin: 0 1px;
   margin-bottom: 6px;
