@@ -3,6 +3,9 @@
 <html>
 <head>
     <meta charset="<?php $this->options->charset(); ?>">
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <link rel="dns-prefetch" href="https://cdn.bootcss.com"/>
+    <link rel="prefetch" href="https://spiritree.me/usr/uploads/snowgitlabk.jpg" /> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title><?php $this->archiveTitle(array(
