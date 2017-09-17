@@ -39,17 +39,4 @@
         </ul>
         </div>
     </section>
-    <section>
-        <div class="sidebar-header">
-            <span class="sidebar-header-title">
-                最新文章
-            </span>
-        </div>
-        <div class="sidebar-list">
-        <ul class="sidebar-list-body sidebar-list-items">
-        <?php $this->widget('Widget_Contents_Post_Recent')
-                ->parse('<li class="sidebar-list-item"><a href="{permalink}">{title}</a></li>'); ?>
-        </ul>
-        </div>
-    </section>
 </div>
