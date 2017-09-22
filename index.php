@@ -20,17 +20,29 @@ $this->need('header.php');
     <div class="am-u-lg-8 am-u-sm-12">
         <?php while($this->next()): ?>
         <article class="am-g blog-entry-article">
-            <div class="am-u-lg-6 am-u-lg-12 am-u-sm-12 blog-entry-text">
-                <span> <a href="<?php $this->author->permalink(); ?>">作者:<?php $this->author(); ?></a> &nbsp;</span>
-                <span>时间:<?php $this->date('F j, Y'); ?></span>
-                <div class="notepad-index-post-tags"><?php $this->category('  '); ?>&nbsp;</div>
-                <h1><a target="_blank" itemtype="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
+            <div class="am-u-lg-6 am-u-lg-12 am-u-sm-12 blog-entry-text post-preview">
+                <div class="topic-header">
+                    <div class="pull-left">
+                        <div class="blog-flex-center">
+                            <div class="blog-flex0">
+                                <img src="<?php $this->options->avatarUrl(); ?>" alt="" class="link avatar avatar-image">
+                            </div>
+                            <div class="author-lockup blog-flex1">
+                                <a class="link" href="<?php $this->author->permalink(); ?>"><?php $this->author(); ?></a>
+                                <span class="in">in</span>
+                                <span class="category-name">
+                                    <?php $this->category('  '); ?>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="pull-right time"><?php $this->date('F j, Y'); ?></span>
+                </div>
+                <h1 class="post-index-title"><a target="_blank" itemtype="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
             <div>
-    		<?php $this->content(''); ?>
-            <a href="<?php $this->permalink() ?>" class="blog-continue" target="_blank">继续阅读 »</a>
-            </div>
-              
-            </div>
+            <div class="post-content-preview">
+                <?php $this->excerpt(200, '...'); ?>
+            </div>       
         </article>
         <?php endwhile; ?>
         <ul class="am-pagination">

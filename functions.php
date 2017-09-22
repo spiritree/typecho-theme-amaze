@@ -8,8 +8,8 @@ function themeConfig($form) {
     $backgroundImage = new Typecho_Widget_Helper_Form_Element_Text('backgroundImage', NULL, NULL, _t('背景图片地址'), _t('请输入 背景图片 地址'));
     $form->addInput($backgroundImage);
 
-    $authorInfo = new Typecho_Widget_Helper_Form_Element_Text('authorInfo', NULL, NULL, _t('头像下方简介'), _t('用于头像下方显示的一段文字'));
-    $form->addInput($authorInfo);
+    $avatarUrl = new Typecho_Widget_Helper_Form_Element_Text('avatarUrl', NULL, NULL, _t('头像地址'), _t('输入头像地址'));
+    $form->addInput($avatarUrl);
 
     $socialQQ = new Typecho_Widget_Helper_Form_Element_Text('socialQQ', NULL, NULL, _t('QQ'), _t('请输入QQ号码'));
     $form->addInput($socialQQ);

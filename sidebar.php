@@ -3,6 +3,40 @@
     <section>
         <div class="sidebar-header">
             <span class="sidebar-header-title">
+                关于博主
+            </span>
+        </div>
+        <ul class="list-inline">
+            <?php if ($this->options->socialQQ): ?>
+            <li>
+                <a class="am-icon-btn am-icon-qq" target="_blank" itemtype="url" href="tencent://message/?uin=<?php $this->options->socialQQ(); ?>&Site=junichi&Menu=yes"></a>
+            </li>
+            <?php endif; ?>
+            <?php if ($this->options->socialWechat): ?>
+            <li>
+                <a class="am-icon-btn am-icon-wechat" target="_blank" itemtype="url" href="<?php $this->options->socialWechat(); ?>"></a>
+            </li>
+            <?php endif; ?>
+            <?php if ($this->options->socialGithub): ?>
+            <li>
+                <a class="am-icon-btn am-icon-github" target="_blank" itemtype="url" href="<?php $this->options->socialGithub(); ?>"></a>
+            </li>
+            <?php endif; ?>
+            <?php if ($this->options->socialWeibo): ?>
+            <li>
+                <a class="am-icon-btn am-icon-weibo" target="_blank" itemtype="url" href="<?php $this->options->socialWeibo(); ?>"></a>
+            </li>
+            <?php endif; ?>
+            <?php if ($this->options->socialTwiiter): ?>
+            <li>
+                <a class="am-icon-btn am-icon-twitter" target="_blank" itemtype="url" href="<?php $this->options->socialTwitter(); ?>"></a>
+            </li>
+            <?php endif; ?>
+        </ul>
+    </section>
+    <section>
+        <div class="sidebar-header">
+            <span class="sidebar-header-title">
                 分类列表
             </span>
         </div>

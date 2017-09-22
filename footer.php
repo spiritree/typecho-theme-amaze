@@ -4,7 +4,7 @@
     <ul class="list-inline text-center">
 	    <li>
             <a href="https://github.com/spiritree/typecho-theme-amaze" target="_blank">
-            <span class="am-icon-btn am-icon-md am-icon-github"></span>
+            <span class="am-icon-btn am-icon-md am-icon-github footer-icon"></span>
         </li>
     </ul>
     <div class="blog-text-center">© <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a> 由 <a href="http://www.typecho.org" target="_blank">Typecho</a> 强力驱动 Theme is <a href="https://spiritree.me" target="_blank">Amaze made by Spiritree</a>
