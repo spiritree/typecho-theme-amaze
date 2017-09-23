@@ -2796,3 +2796,35 @@ code {
   background-color: transparent;
   color: #666;
 }
+.clearfix:after, .clearfix:before {
+  display: table;
+  content: " ";
+}
+@media only screen and (max-width: 750px) {
+  span.time.pc_time {
+    display:none !important;
+  }
+
+  span.time.mobile_time {
+    display: inline-block !important;
+  }
+  .author-lockup {
+    margin-right: 20px;
+  }
+  .topic-footer {
+    margin-top: 27px;
+    margin-bottom: 26px;
+    line-height: 20px;
+  }
+}
+@media only screen and (min-width: 750px) {
+  span.time.pc_time {
+    display:inline-block !important;
+    font-size: 16px;
+    color: #C7C7C7;
+    line-height: 36px;
+  }
+  span.time.mobile_time {
+    display: none !important;
+  }
+}

@@ -36,13 +36,15 @@ $this->need('header.php');
                             </div>
                         </div>
                     </div>
-                    <span class="pull-right time"><?php $this->date('F j, Y'); ?></span>
+                <span class="pull-right time pc_time"><?php $this->date('F j, Y'); ?></span>
                 </div>
-                <h1 class="post-index-title"><a target="_blank" itemtype="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
-            <div>
+            <h1 class="post-index-title"><a target="_blank" itemtype="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
             <div class="post-content-preview">
                 <?php $this->excerpt(200, '...'); ?>
-            </div>       
+            </div>
+            <div class="clearfix topic-footer">
+                <span class="pull-left time mobile_time"><?php $this->date('F j, Y'); ?></span>
+            </div>
         </article>
         <?php endwhile; ?>
         <ul class="am-pagination">
