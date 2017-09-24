@@ -71,7 +71,7 @@
                     <div class="post-heading">
                         <h1><?php $this->title() ?></h1>
                         <span class="meta">@<?php $this->author(); ?> &nbsp;<?php $this->date('F j, Y'); ?></span>
-                        <div class="tags"><?php $this->category('  '); ?>&nbsp;</div>
+                        <div class="tags post-tags"><?php $this->category('  '); ?>&nbsp;</div>
                     </div>
                 </div>
         </div>

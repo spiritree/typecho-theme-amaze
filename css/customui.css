@@ -2828,3 +2828,6 @@ code {
     display: none !important;
   }
 }
+.post-tags  a {
+  color: #fff !important;
+}
