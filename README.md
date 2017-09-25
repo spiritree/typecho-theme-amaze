@@ -11,6 +11,9 @@
 
 ## 主题预览
 ![typecho-theme-amaze.png](https://raw.githubusercontent.com/spiritree/typecho-theme-amaze/master/screenshot.png)
+
+![typecho-theme-amaze.png](https://raw.githubusercontent.com/spiritree/typecho-theme-amaze/master/mobilescreenshot.png)
+
 预览地址：**[spiritree.me](https://spiritree.me)**
 
 ## 主题亮点
