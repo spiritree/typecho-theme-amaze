@@ -47,9 +47,6 @@
         <div id="huxblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="<?php $this->options->siteUrl(); ?>"><?php _e('Home'); ?></a>
-                    </li>
                     <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
                     <?php while($pages->next()): ?>
                     <li>
