@@ -18,9 +18,10 @@
 <script>
     $(document).ready(function() {
         $('pre code').each(function(i, block) {
-            hljs.highlightBlock(block);
-        });
-    });
+            hljs.highlightBlock(block)
+        })
+        $('table').addClass('am-table')
+    })
 </script>
 <?php $this->footer(); ?>
 </body>
