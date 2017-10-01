@@ -16,14 +16,30 @@ $this->need('header.php');
         <?php if ($this->have()): ?>
         <?php while($this->next()): ?>
         <article class="am-g blog-entry-article">
-            <div class="am-u-lg-6 am-u-lg-12 am-u-sm-12 blog-entry-text">
-                <span>作者:<a href="<?php $this->author->permalink(); ?>">@<?php $this->author(); ?></a> &nbsp;</span>
-                <span>时间:<?php $this->date('F j, Y'); ?></span>
-                <div class="notepad-index-post-tags"><?php $this->category('  '); ?>&nbsp;</div>
-                <h1><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
-                           <div class="post-content" itemprop="articleBody">
-    			<?php $this->content('- 阅读剩余部分 -'); ?>
+            <div class="am-u-lg-6 am-u-lg-12 am-u-sm-12 blog-entry-text post-preview">
+                <div class="topic-header">
+                    <div class="pull-left">
+                        <div class="blog-flex-center">
+                            <div class="blog-flex0">
+                                <img src="<?php $this->options->avatarUrl(); ?>" alt="" class="link avatar avatar-image">
+                            </div>
+                            <div class="author-lockup blog-flex1">
+                                <a class="link" href="<?php $this->author->permalink(); ?>"><?php $this->author(); ?></a>
+                                <span class="in">in</span>
+                                <span class="category-name">
+                                    <?php $this->category('  '); ?>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                <span class="pull-right time pc_time"><?php $this->date('F j, Y'); ?></span>
+                </div>
+            <h1 class="post-index-title"><a target="_blank" itemtype="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h1>
+            <div class="post-content-preview">
+                <?php $this->excerpt(200, '...'); ?>
             </div>
+            <div class="clearfix topic-footer">
+                <span class="pull-left time mobile_time"><?php $this->date('F j, Y'); ?></span>
             </div>
         </article>
         <?php endwhile; ?>

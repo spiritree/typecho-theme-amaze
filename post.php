@@ -80,7 +80,7 @@
 
     <!-- content start -->
     <div class="container">
-    <div class="am-g am-g-fixed blog-fixed blog-content">
+    <div class="am-g am-g-fixed blog-fixed">
         <div class="am-u-lg-12 am-u-sm-12">
             <article class="am-article blog-article-p article-trigger">
                 <div class="am-article-bd">
