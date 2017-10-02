@@ -2,11 +2,17 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 function themeConfig($form) {
-    $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('站点LOGO地址'), _t('在这里填入一个图片URL地址, 以在网站标题前加上一个LOGO'));
-    $form->addInput($logoUrl);
+    $faviconUrl = new Typecho_Widget_Helper_Form_Element_Text('faviconUrl', NULL, NULL, _t('站点favicon.ico地址'), _t('站点favicon.ico地址'));
+    $form->addInput($faviconUrl);
 
     $backgroundImage = new Typecho_Widget_Helper_Form_Element_Text('backgroundImage', NULL, NULL, _t('背景图片地址'), _t('请输入 背景图片 地址'));
     $form->addInput($backgroundImage);
+
+    $backgroundText = new Typecho_Widget_Helper_Form_Element_Text('backgroundText', NULL, NULL, _t('背景图片大标题'), _t('请输入 背景图片大标题 内容'));
+    $form->addInput($backgroundText);
+
+    $searchPage = new Typecho_Widget_Helper_Form_Element_Text('searchPage', NULL, NULL, _t('搜索页地址'), _t('输入你的 Template Page of Search 的页面地址,记得带上 http:// 或 https://'));
+    $form->addInput($searchPage);
 
     $avatarUrl = new Typecho_Widget_Helper_Form_Element_Text('avatarUrl', NULL, NULL, _t('头像地址'), _t('输入头像地址'));
     $form->addInput($avatarUrl);

@@ -48,8 +48,12 @@ $this->need('header.php');
         </article>
         <?php endwhile; ?>
         <ul class="am-pagination">
-            <?php $this->pageLink('&laquo; Prev','prev');?>
-            <?php $this->pageLink('Next &raquo;','next');?>
+            <li class="am-pagination-prev">
+                <?php $this->pageLink('&laquo; Prev','prev');?>
+            </li>
+            <li class="am-pagination-next">
+                <?php $this->pageLink('Next &raquo;','next');?>
+            </li>
         </ul>
     </div>
     <?php $this->need('sidebar.php'); ?>
