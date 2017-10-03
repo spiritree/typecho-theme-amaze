@@ -56,6 +56,11 @@
                         <a href="<?php $pages->permalink(); ?>"><?php $pages->title(); ?></a>
                     </li>
                     <?php endwhile; ?>
+                    <?php if($this->options->searchPage): ?>
+                    <li>
+                        <a class="am-icon-search navbar-search" href="<?php $this->options->searchPage(); ?>"></a>
+                    </li>
+                    <?php endif;?>
                 </ul>
             </div>
         </div>

@@ -13,6 +13,8 @@
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="<?php $this->options->faviconUrl(); ?>">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <!-- AmazeUI 3.0 -->
@@ -41,18 +43,31 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/"><?php $this->options->title(); ?></a>
+            <?php if($this->options->searchPage): ?>
+                <a class="navbar-mobile-search" href="<?php $this->options->searchPage(); ?>">
+                    <span class="am-icon-search"></span>
+                </a>
+            <?php endif;?>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div id="huxblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="<?php $this->options->siteUrl(); ?>"><?php _e('Home'); ?></a>
+                    </li>
                     <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
                     <?php while($pages->next()): ?>
                     <li>
                         <a href="<?php $pages->permalink(); ?>"><?php $pages->title(); ?></a>
                     </li>
                     <?php endwhile; ?>
+                    <?php if($this->options->searchPage): ?>
+                    <li>
+                        <a class="am-icon-search navbar-search" href="<?php $this->options->searchPage(); ?>"></a>
+                    </li>
+                    <?php endif;?>
                 </ul>
             </div>
         </div>
@@ -65,7 +80,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
-                    <h1><?php $this->options->title(); ?></h1>
+                    <h1><?php $this->options->backgroundText(); ?></h1>
                     <!-- <hr class="small"> -->
                     <span class="subheading"><?php $this->options->description() ?></span>
                 </div>
