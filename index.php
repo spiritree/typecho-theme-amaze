@@ -48,7 +48,7 @@ $this->need('header.php');
         </article>
         <?php endwhile; ?>
         <ul class="am-pagination">
-            <li class="am-pagination-prev">
+awdwd            <li class="am-pagination-prev">
                 <?php $this->pageLink('&laquo; Prev','prev');?>
             </li>
             <li class="am-pagination-next">
