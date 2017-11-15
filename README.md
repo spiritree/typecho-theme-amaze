@@ -4,6 +4,8 @@
 ## Amaze Theme
 > 这是一个简洁风格的主题，参考了AmazeUI和[Typecho-Theme-Meizi](https://github.com/tlerbao/Typecho-Theme-Meizi)还有Jekyll的主题Project-pages和[小专栏](https://xiaozhuanlan.com/)，可以说是AmazeUI、Project-pages、小专栏混搭风格。
 
+主题讨论地址：https://spiritree.me/archives/typecho-theme-amaze.html
+
 ## 概述
 
 - 作者：spiritree
@@ -47,6 +49,7 @@ Github本页面下载，点击"Download ZIP"下载，将主题文件夹改名为
 - [x] 首页侧边栏重构
 - [x] 首页文章详情重构
 - [x] 增加搜索功能
+- [ ] 文章自动生成目录
 
 ## LICENSE
 
