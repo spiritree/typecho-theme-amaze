@@ -13,6 +13,8 @@
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="<?php $this->options->faviconUrl(); ?>">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <!-- AmazeUI 3.0 -->
@@ -97,13 +99,11 @@
                 <li class="previous"><?php $this->thePrev('%s',''); ?></li>
                 <li class="next"><?php $this->theNext('%s',''); ?></li>
             </ul>
-
-            <?php $this->need('comments.php'); ?>
-
             <hr>
         </div>
 
     </div>
     </div>
+    <?php $this->need('comments.php'); ?>
     <!-- content end -->
 <?php $this->need('footer.php'); ?>
