@@ -1833,3 +1833,237 @@ margin: 20px auto 10px
   outline-style: none;
   background-color: #fff
 }
+/* TOC */
+#directory {
+  all: initial;
+}
+
+#directory * {
+  all: unset;
+}
+
+/* container */
+
+#directory {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: fixed;
+  right: 0px;
+  top: 25%;
+  max-width: 3em;
+  max-height: 7em;
+  z-index: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: gray;
+  font-size: calc(12px + 0.1vw);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: normal;
+  border: 1px solid rgba(158, 158, 158, 0.22);
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
+  overflow: hidden;
+  will-change: transform, max-width;
+  transition: max-width 0.3s;
+  contain: content;
+}
+
+#directory:hover {
+  max-width: 33vw;
+  max-height: calc(100vh - 100px);
+}
+
+#directory.hidden {
+  display: none;
+}
+
+#directory .handle {
+  -webkit-user-select: none;
+  user-select: none;
+
+  border-bottom: 1px solid rgba(158, 158, 158, 0.22);
+  padding: 0.1em 0.7em;
+  font-variant-caps: inherit;
+  font-variant: small-caps;
+  font-size: 0.9em;
+  color: #bbb;
+  cursor: pointer;
+  text-align: center;
+  opacity: 0;
+  will-change: opacity;
+  transition: opacity 0.3s;
+}
+
+#directory:hover .handle {
+  max-width: 33vw;
+  opacity: 1;
+}
+
+#directory .handle:hover,
+#directory .handle:active {
+  cursor: move;
+}
+
+#directory .handle:active {
+  background: #f9f9f9;
+}
+
+#directory > ul {
+  flex-grow: 1;
+  padding: 1.3em 1.3em 1.3em 1em;
+  overflow-y: auto;
+}
+
+/* all headings  */
+
+#directory ul,
+#directory li {
+  list-style: none;
+  display: block;
+}
+
+#directory a {
+  text-decoration: none;
+  color: gray;
+  display: block;
+  line-height: 1.3;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+#directory a:hover,
+#directory a:active {
+  border-left-color: rgba(86, 61, 124, 0.5);
+  color: #563d7c;
+}
+
+#directory li.active > a {
+  border-left-color: #563d7c;
+  color: #563d7c;
+}
+
+/* heading level: 1 */
+
+#directory ul {
+  line-height: 2;
+  overflow: hidden;
+}
+
+#directory ul a {
+  font-size: 1em;
+  padding-left: 1.3em;
+}
+
+#directory ul a:hover,
+#directory ul a:active,
+#directory ul li.active > a {
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding-left: calc(1.3em - 3px);
+}
+
+#directory ul li.active > a {
+  font-weight: 700;
+}
+
+/* heading level: 2 (hidden only when there are too many headings)  */
+
+#directory ul ul {
+  line-height: 1.8;
+}
+
+#directory.lengthy ul ul {
+  display: none;
+}
+
+#directory.lengthy ul li.active > ul {
+  display: block;
+}
+
+#directory ul ul a {
+  font-size: 1em;
+  padding-left: 2.7em;
+}
+
+#directory ul ul a:hover,
+#directory ul ul a:active,
+#directory ul ul li.active > a {
+  border-left-width: 2px;
+  border-left-style: solid;
+  padding-left: calc(2.7em - 2px);
+  font-weight: normal;
+}
+
+/* heading level: 3 (hidden unless parent is active) */
+
+#directory ul ul ul {
+  line-height: 1.7;
+  display: none;
+}
+
+#directory ul ul li.active > ul {
+  display: block;
+}
+
+#directory ul ul ul a {
+  font-size: 1em;
+  padding-left: 4em;
+}
+
+#directory ul ul ul a:hover,
+#directory ul ul ul a:active,
+#directory ul ul ul li.active > a {
+  border-left-width: 1px;
+  border-left-style: solid;
+  padding-left: calc(4em - 1px);
+  font-weight: normal;
+}
+.directory-content {
+  position: relative;
+  z-index: 0;
+  max-width: 720px;
+  margin-right: auto!important;
+  margin-left: auto!important;
+  text-align: right;
+  opacity: 0
+}
+
+.directory-content.initial {
+  opacity: 0
+}
+
+.directory-content.pinned {
+  opacity: 1
+}
+
+.directory-content.unpinned {
+  opacity: 1
+}
+
+.directory-content.headroom--top {
+  opacity: 0
+}
+
+.directory-content.headroom--not-top {
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+  opacity: 1
+}
+
+/* fix pre width */
+@media only screen and (min-width: 750px) {
+  pre {
+    max-width: 80%;
+  }
+}
+
+@media(max-width: 1000px) {
+  .directory-content {
+    display: none;
+  }
+}
