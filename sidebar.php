@@ -27,7 +27,7 @@
                 <a class="am-icon-btn am-icon-weibo" target="_blank" itemtype="url" href="<?php $this->options->socialWeibo(); ?>"></a>
             </li>
             <?php endif; ?>
-            <?php if ($this->options->socialTwiiter): ?>
+            <?php if ($this->options->socialTwitter): ?>
             <li>
                 <a class="am-icon-btn am-icon-twitter" target="_blank" itemtype="url" href="<?php $this->options->socialTwitter(); ?>"></a>
             </li>
